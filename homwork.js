@@ -51,6 +51,34 @@
 
  //.....................End qustion(3)...............................................//
 
+
+ //..................... qustion(4)...............................................//
+
+function isValidEmail(email) {
+  var regex = new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
+  return regex.test(email);
+}
+
+console.log(isValidEmail("john.doe@example.com")); // true
+console.log(isValidEmail("jane.doe@")); // false
+//..................... End qustion(4)...............................................//
+
+//..................... qustion(5)...............................................//
+
+function calculateAge(dateOfBirth) {
+  var currentDate = new Date();
+  var birthDate = new Date(dateOfBirth);
+  
+  var ageInMilliseconds = currentDate - birthDate;
+  var ageInYears = ageInMilliseconds / (1000 * 60 * 60 * 24 * 365.25);
+  
+  return Math.floor(ageInYears);
+}
+```
+//.....................end qustion(5).............................................//
+
+
+
  //.....................start qustion(6).............................................//
 
          function replaceSubstring( str,sub,repl) {
