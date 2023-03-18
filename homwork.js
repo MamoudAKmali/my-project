@@ -74,7 +74,7 @@ function calculateAge(dateOfBirth) {
   
   return Math.floor(ageInYears);
 }
-```
+
 //.....................end qustion(5).............................................//
 
 
